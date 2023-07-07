@@ -5,7 +5,7 @@ def find_lowest_number(secret_key):
     while True:
         string = secret_key + str(number)
         hash_value = hashlib.md5(string.encode()).hexdigest()
-        if hash_value.startswith("00000"):
+        if hash_value.startswith("000000"):
             return number
         number += 1
 
