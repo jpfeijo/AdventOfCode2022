@@ -60,7 +60,6 @@ def part_two():
                 for column in range(start[1], end[1] + 1):
 
                     if action == 'turn' and command[1] == 'on':
-                        # if not light_grid[row][column]:
                         light_grid[row][column] += 1
                         total_brightness += 1
 
@@ -72,12 +71,6 @@ def part_two():
                     elif action == 'toggle':
                         light_grid[row][column] += 2
                         total_brightness += 2
-
-                        # if light_grid[row][column]:
-                        #     lights_on += 1
-
-                        # else:
-                        #     lights_on -= 1
 
     print(total_brightness)
 
